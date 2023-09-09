@@ -40,11 +40,16 @@
         .inner_body ul li {
             list-style: none;
         }
-        .inner_body ul li a{
+        
+        .inner_body ul li {
+            float: left;
+        }
+        
+        .inner_body ul li a {
             display: block;
             padding: 10px;
             background: black;
-            float: left;
+            /* float: left; */
             height: 30px;
             font-family: cursive;
             font-size: 22px;
@@ -64,6 +69,32 @@
             border-right: 1px solid gold;
             box-shadow: white 1px 1px 1px 1px;
         }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown_list {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown_list a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown_list a:hover {
+            background-color: #f1f1f1
+        }
+        .dropdown:hover .dropdown_list {
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -73,8 +104,33 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Services</a></li>
+                
+                <li>
+                    <div class="dropdown">  
+                        <a href="#">Products</a>
+
+                        <div class="dropdown_list">
+                            <a href="#">Product1</a>
+                            <a href="#">Product2</a>
+                            <a href="#">Product3</a>
+                            <a href="#">Product4</a>
+                        </div>
+                    </div> 
+                </li>
+
+                <li>
+                    <div class="dropdown">  
+                        <a href="#">Services</a>
+
+                        <div class="dropdown_list">
+                            <a href="#">Service1</a>
+                            <a href="#">Service2</a>
+                            <a href="#">Service3</a>
+                            <a href="#">Service4</a>
+                        </div>
+                    </div> 
+                </li>
+
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Users</a></li>
                 <li><a href="#">Login</a></li>
