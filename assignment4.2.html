@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple menu Design</title>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url('Chiq Medium.otf');
+            font-weight: bold;
+        }
+        body
+        {
+            padding:0px;
+            margin:0px;
+                 }
+        .inner_body ul
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .outer_body {
+            width: 950px;
+            margin:auto;
+        }
+        .inner_body ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        .inner_body {
+            margin-top: 20px;
+            width:100%;
+            height:50px;
+            border:1px solid black;
+            border-bottom:5px solid orange;
+            background: black;
+            box-shadow: black 2px 2px 4px 2px;
+        }
+        .inner_body ul li {
+            list-style: none;
+        }
+        .inner_body ul li a{
+            display: block;
+            padding: 10px;
+            background: black;
+            float: left;
+            height: 30px;
+            font-family: cursive;
+            font-size: 22px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            text-decoration: none;
+            color: white;
+            -webkit-transition-property: background;
+            -webkit-transition-duration: 0.7s;
+            -webkit-transition-timing-function: cubic-bezier; 
+        }
+        .inner_body ul li a:hover {
+            background: gray;
+            border-left: 1px solid gold;
+            border-right: 1px solid gold;
+            box-shadow: white 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer_body">
+        <div class="inner_body">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
