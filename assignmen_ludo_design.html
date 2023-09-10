@@ -5,64 +5,417 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            align: center;
+        }
         .ludo_outer_box {
-            
+        border: 5px solid black;
+        background-color: rgb(201, 57, 153);
+        width: 1260px;
+        height: 400px;
+        }
+        .three_box_first_box {
+            border: 1px solid black;
+            background-color: white;
+            width: 100%;
+            height: 100%; 
+        }
+        .three_box_second_box {
+            border: 1px solid black;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+        .three_box_third_box {
+            border: 1px solid black;
+            background-color: white;
+            width: 100%;
+            height: 100%;
         }
         .first_box {
-            
+            border: 1px solid black;
+            background-color: green;
+            width: 400px;
+            height: 390px;
+            float: left;
+        }
+        .first_inner_box {
+            border: 20px solid green;
+            background-color: white;
+            width: 360px;
+            height: 360px;
+        }
+        .first_inner_first_box {
+            border: 30px solid green;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .first_inner_second_box {
+            border: 30px solid green;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .first_inner_third_box {
+            border: 30px solid green;
+            background-color: white;;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .first_inner_forth_box {
+            border: 30px solid green;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: right;
         }
         .second_box {
-          
-        .first_inner_box {
-           
+            border: 1px solid black;
+            background-color: white;
+            width: 434px;
+            height: 395px;
+            float:left
+        }
+        .second_second_box {
+            border: 1px solid black;
+            background-color: white;
+            width: 405px;
+            height: 400px;
+            float:left
+        }
+        .second_third_box {
+            border: 1px solid black;
+            background-color: white;
+            width: 436px;
+            height: 395px;
+            float:left;
+        }
+        .small_boxex {
+            border: 1px solid black;
+            width: 130px;
+            height: 55px;
+            background-color: white;
+        }
+        .big_boxex {
+            border: 1px solid black;
+            width: 100px;
+            height: 120px;
+            background-color: white;
+        }
+        .third_box {
+            border: 1px solid black;
+            background-color: rgb(238, 14, 14);
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+        .third_inner_box {
+            border: 20px solid red;
+            background-color: white;
+            width: 360px;
+            height: 360px;
+        }
+        .third_inner_first_box {
+            border: 30px solid red;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .third_inner_second_box {
+            border: 30px solid red;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .third_inner_third_box {
+            border: 30px solid red;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .third_inner_forth_box {
+            border: 30px solid red;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: right;
+        }
+        .fifth_box {
+            border: 1px solid black;
+            background-color: rgb(248, 244, 5);
+            width: 400px;
+            height: 380px;
+            float: left;
+        }
+        .fifth_inner_box {
+            border: 20px solid rgb(240, 205, 8);
+            background-color:white;
+            width: 360px;
+            height: 354px;
+        }
+        .fifth_inner_first_box {
+            border: 30px solid rgb(240, 205, 8);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .fifth_inner_second_box {
+            border: 30px solid rgb(240, 205, 8);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .fifth_inner_third_box {
+            border: 30px solid rgb(240, 205, 8);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .fifth_inner_forth_box {
+            border: 30px solid rgb(240, 205, 8);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: right;
+        }
+        .forth_box {
+            border: 1px solid black;
+            background-color: rgb(4, 248, 216);
+            width: 350px;
+            height: 400px;
+            float: left;
+        }
+        .forth_inner_box {
+            border: 27px solid rgb(4, 248, 216);
+            background-color:white;
+            width: 360px;
+            height: 345px;
+        }
+        .forth_inner_first_box {
+            border: 30px solid rgb(4, 248, 216);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .forth_inner_second_box {
+            border: 30px solid rgb(4, 248, 216);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .forth_inner_third_box {
+            border: 30px solid rgb(4, 248, 216);;
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: left;
+        }
+        .forth_inner_forth_box {
+            border: 30px solid rgb(4, 248, 216);
+            background-color: white;
+            width: 120px;
+            height: 120px;
+            float: right;
+        }
+        .sixth_box {
+            border: 4px solid black;
+            background-color: rgb(41, 4, 248);
+            width: 426px;
+            height: 390px;
+            float: left;
+        }
+        .small_boxex #1 {
+            background-color: black;
+        }
+        #yellow1 {
+            background-color: yellow;
+        }
+        #blue1 {
+            background-color: blue;
+        }
+        #green {
+            background-color: green;
+        }
+        #red {
+            background-color: red;
         }
     </style>
 </head>
 <body>
     <div class="ludo_outer_box">
+        <div class="three_box_first_box">
         <div class="first_box">
             <div class="first_inner_box">
-            <div class="second_box"></div></div>
-            <div class="first_inner_box"></div>
-            <div class="first_inner_box"></div>
+                <div class="first_inner_first_box"></div>
+                <div class="first_inner_second_box"></div>
+                <div class="first_inner_third_box"></div>
+                <div class="first_inner_forth_box"></div>
+            </div>
         </div>
-        <!-- <table>
-            <tr>
-                <td colspan="6" rowspan="6" class="first_box"></td>
-            </tr>
-            <tr>
-                <td class="second_box"></td>
-                <td class="second_box"></td>
-                <td class="second_box"></td>
-                <td colspan="6" rowspan="6"></td>
-            </tr>
-            <tr>
-                <td class="second_box"></td>
-                <td class="third_box"></td>
-                <td class="third_box"></td>
-            </tr>
-            <tr>
-                <td class="second_box"></td>
-                <td class="third_box"></td>
-                <td class="second_box"></td>
-            </tr>
-            <tr>
-                <td class="second_box"></td>
-                <td class="third_box"></td>
-                <td class="second_box"></td>
-            </tr>
-            <tr>
-                <td class="second_box"></td>
-                <td class="third_box"></td>
-                <td class="second_box"></td>
-            </tr>
-            
-            <tr>
-                <td class="forth_box"></td>
-            </tr>
-        </table> -->
-        <div class="first_box">
-            <div class="first_inner_box"></div>
+        <div class="second_box">
+            <table class="second_box">
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex" id="red"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="red"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="third_box">
+            <div class="third_inner_box">
+                <div class="third_inner_first_box"></div>
+                <div class="third_inner_second_box"></div>
+                <div class="third_inner_third_box"></div>
+                <div class="third_inner_forth_box"></div>
+            </div>
+        </div></div>
+        <div class="three_box_second_box">
+        <div class="second_second_box">
+            <table class="second_second_box">
+                <tr>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex" id="green"></td>
+                </tr>
+                <tr>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex" id="green"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="sixth_box">
+        </div>
+        <div class="second_second_box">
+            <table class="second_second_box">
+                <tr>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex" ></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex"></td>
+                    <td class="big_boxex" id="blue1"></td>
+                    <td class="big_boxex"></td>
+                </tr>
+            </table>
+        </div></div>
+        <div class="three_box_third_box">
+        <div class="fifth_box" >
+            <div class="fifth_inner_box">
+                <div class="fifth_inner_first_box"></div>
+                <div class="fifth_inner_second_box"></div>
+                <div class="fifth_inner_third_box"></div>
+                <div class="fifth_inner_forth_box"></div>
+            </div>
+        </div>
+        <div class="second_third_box">
+            <table class="second_third_box">
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex" id="yellow1"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+                <tr>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex"></td>
+                    <td class="small_boxex"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="forth_box">
+            <div class="forth_inner_box">
+                <div class="forth_inner_first_box"></div>
+                <div class="forth_inner_second_box"></div>
+                <div class="forth_inner_third_box"></div>
+                <div class="forth_inner_forth_box"></div>
+            </div>
+        </div>
         </div>
     </div>
 </body>
