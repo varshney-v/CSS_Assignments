@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Count</title>
+    <style>
+        .box_with_calculation {
+            margin:0px 0px;
+            border: 1px solid grey;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: rgb(197, 196, 196);
+        }
+        .cross {
+            float: right;
+        }
+        form table td{
+            margin:20px 30px;
+        }
+        .Words {
+            padding-bottom: 35px;
+        }
+        .button {
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .bigbox {
+            border: 3px solid lightgray;
+            width: 400px;
+            /* height: 328px; */
+            margin:200px 90px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="bigbox">
+    <div class="box_with_calculation" width="300px" border="1">
+        <div class="cross"><a href="">x</a></div>
+        <div class="Words">Word count</div>
+        <table>
+            <tr>
+                <td colspan="3">
+                    Counts
+                </td>
+                <td>
+                    Selection Document
+                </td>
+            </tr>
+            <tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td colspan="3">
+                    Pages
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    101
+                </td>
+            </tr>
+            <tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td colspan="3">
+                    Words
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    208
+                </td>
+            </tr>
+            <tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td colspan="3">
+                    Characters (no spaces)
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    1208
+                </td>
+            </tr>
+            <tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td colspan="3">
+                    Characters (with spaces)
+                </td>
+                <td>
+                    0
+                </td>
+                <td>
+                    1428
+                </td>
+            </tr>
+            <tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td>
+                    <input type="button" value="close" class="button" name="close">
+                </td>
+            </tr>
+        </table>
+        </div></div>
+    </form>
+</body>
+</html>
