@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+</head>
+<style>
+
+    .header {
+        border: 10px solid orange;
+        background-color: black;
+        color:azure ;
+        width: 1600px;
+        height: 200px;
+        text-align: center;
+        margin-top: 130px;
+        border-radius: 240px;
+        margin-left: 590px;
+    }
+    .inner_header_box {
+        margin-top: 48px;
+        font-size: 80px;
+    }
+    .container {
+        border: 1px solid black;
+        border-top: 8px solid black;
+        width: 1590px;
+        height: 1220px;
+        margin-top: 130px;
+        margin-left: 590px;
+        padding: 20px;
+        /* display: flex ; */
+    }
+    .box1 {
+        border-radius: 5px;
+        display:block;
+        width:1800px;
+        height: 400px;
+        margin-left: 5px;
+    }
+    body {
+		background:#c8c0d8;
+	}
+    img {
+        width:370px;
+        height:380px;
+        margin:5px;
+        padding:3px;
+        border:3px solid black;
+        opacity:2.5;
+        border-radius:40px;
+    }
+    img:hover {	
+        opacity:.5;
+        box-shadow:3px 3px 3px black;
+        border:3px solid orange;
+        color: azure;
+        /* transform: scale(1.2);    */
+        cursor: pointer;
+    }
+</style>
+<body>
+    <header>
+        <div class="header">
+            <div class="inner_header_box">Photo Gallery</div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box-1">
+            <img src="resources\a.jpg">
+            <img src="resources\a.jpg">
+            <img src="resources\a.jpg">
+            <img src="resources\a.jpg">
+        </div>
+        <!-- <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div>
+        <div class="box-1"></div> -->
+        <div class="box-1">
+            <img src="resources\a.jpg"><img src="resources\a.jpg"><img src="resources\a.jpg"><img src="resources\a.jpg">
+        </div>
+        <div class="box-1">
+            <img src="resources\a.jpg"><img src="resources\a.jpg"><img src="resources\a.jpg">
+            <img src="resources\a.jpg">
+        </div>
+    </div>
+</body>
+</html>
